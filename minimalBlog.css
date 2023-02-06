@@ -164,6 +164,49 @@ header {
   padding: 20px;
 }
 
+.blogContainer {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  background-color: #f7fafc;
+  justify-content: space-between;
+}
+.blogIntro {
+  padding: 90px 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.blogTitle {
+  font-size: 40px;
+  line-height: 45px;
+  color: #000000;
+}
+.blogContent {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #718096;
+}
+.readMoreBlog {
+  font-weight: 700;
+  font-family: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+.readMoreBlog:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  .blogContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cardImage {
+    min-width: -webkit-fill-available;
+  }
+}
 @media screen and (max-width: 1000px) {
   .profileImage {
     width: 400px;
@@ -240,6 +283,15 @@ header {
   .profileImage {
     width: 430px;
   }
+  .blogIntro {
+    padding: 60px 45px;
+  }
+  .blogTitle {
+    font-size: 35px;
+  }
+  .blogContent {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 540px) {
   header {
@@ -247,5 +299,8 @@ header {
   }
   .navItems {
     gap: 15px;
+  }
+  .blogIntro {
+    padding: 30px;
   }
 }
